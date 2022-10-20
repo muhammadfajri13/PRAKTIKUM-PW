@@ -1,0 +1,84 @@
+<!-- <p>Hint: Design a credit card checkout form or page. Don't forget the important elements such as the numbers, dates, security numbers, etc. (It's up to you!) Don't forget to share on Dribbble and/or Twitter when you're done.</p> -->
+
+<div class="container">
+	
+	<div class="breadcrumbs">
+		<div class="breadcrumb-item">
+			<span class="number">1</span>
+			<span class="label">Name & Address</span>
+		</div>
+		<div class="breadcrumb-item">
+			<span class="number">2</span>
+			<span class="label">Shipping</span>
+		</div>
+		<div class="breadcrumb-item current">
+			<span class="number">3</span>
+			<span class="label">Payment</span>
+		</div>
+		<div class="breadcrumb-item">
+			<span class="number">4</span>
+			<span class="label">Review Order</span>
+		</div>
+	</div>
+	
+	<div class="product">
+		<img src="https://image.rakuten.co.jp/footmonkey/cabinet/newbalance/nb-wl555-sj-1.jpg">
+		<h3>555 New Balance</h3>
+		<p>$69.99</p>
+		
+		<table class="information">
+			<tr>
+				<td class="label">Style #:</td>
+				<td>WL696CCA</td>
+			</tr>
+			<tr>
+				<td class="label break">Color:</td>
+				<td>Grey & mint</td>
+			</tr>
+			<tr>
+				<td class="label">Subtotal:</td>
+				<td>$69.99</td>
+			</tr>
+			<tr>
+				<td class="label">Tax:</td>
+				<td>$5.60</td>
+			</tr>
+			<tr>
+				<td class="label break">Shipping:</td>
+				<td>$5.00</td>
+			</tr>
+			<tr>
+				<td class="label">Total</td>
+				<td class="label">$80.59</td>
+			</tr>
+		</table>
+	</div>
+	
+	<form>
+		<div class="input-group">
+			<label for="cc-number">Credit Card Number</label>
+			<input type="text" name="cc-number">
+		</div>
+
+		<div class="cc-info">
+			<div class="input-group month">
+				<label>Month</label>
+				<input type="number" name="exp-month" min="1" max="12">
+			</div>
+
+			<label class="slash">/</label>
+
+			<div class="input-group year">
+				<label>Year</label>
+				<input type="number" name="exp-year" min="2016" max="2025">
+			</div>
+
+			<div class="input-group ccv">
+				<label for="ccv">Security Code</label>
+				<input type="number" name="ccv">
+			</div>
+		</div>
+		
+		<button>Next</button>
+	</form>
+</div>
